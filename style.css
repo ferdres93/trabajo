@@ -243,13 +243,13 @@ p{
 }
 
 .sideA-card2 {
-    background-image: url(/images/personaje2.jpg);
+    background-image: url(images/personaje2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .sideA-card3 {
-    background-image: url(/images/personaje3.jpg);
+    background-image: url(images/personaje3.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -280,7 +280,7 @@ height: 30%;
 /*actores*/
 
 .actores {
-    background-image: url(/images/ACTORES.jpg);
+    background-image: url(images/ACTORES.jpg);
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
@@ -316,7 +316,7 @@ height: 30%;
 
 
 .mapeo{
-    background-image: url(/images/Mapeo.jpg);
+    background-image: url(images/Mapeo.jpg);
     background-position: center;
     background-size: 60%;
     background-repeat: no-repeat;
@@ -330,7 +330,7 @@ height: 30%;
 }
 
 .midas{
-    background-image: url(/images/MIDAS.jpg);
+    background-image: url(images/MIDAS.jpg);
     background-position: center;
     background-size: 65%;
     background-repeat: no-repeat;
