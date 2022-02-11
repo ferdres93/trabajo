@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Anton', sans-serif;
+    line-height: 2.8rem;
+}
+
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/*fullpage*/
+
+#fp-nav ul li a span {
+    background:#FF3D3D ;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color:whitesmoke;
+}
+
+
+/*menu nav*/
+
+.nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    width: 100vw;
+}
+
+.nav li,
+.nav a {
+    display: none;
+    margin: 0.5rem;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: whitesmoke;
+}
+
+/*header*/
+
+.espaciado {
+    padding-bottom: 16rem;
+}
+
+.pequeño {
+    color: #FF3D3D;
+    padding-left: 6%;
+}
+.grande {
+    font-size: 3.5rem;
+    color: #FF3D3D;
+    padding-left: 6%;
+}
+
+.encabezado {
+    padding-left: 6%;
+    padding-right: 40%;
+    color: black;
+}
+
+.header {
+    background: url(images/imagen2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.icono {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    font-size: 2rem;
+    animation: sube-baja 1.5s ease infinite;
+}
+
+
+@keyframes sube-baja {
+    0% { transform: translateY(15px);}
+    50% { transform: translateY(0);}
+    100% { transform: translateY(15px);}
+}
+
+
+
+/*situacion*/
+
+.situacion{
+    background-image: url(images/imagen1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.situ-titulo{
+    padding-left: 54%;
+    color: #FF3D3D;
+    font-size: 4rem;
+    padding-top: 20%;
+}
+
+.situ-texto{
+    padding-left: 54%;
+    padding-right: 6rem;
+    color: white;
+    padding-top: 1rem;
+}
+
+
+
+/*problematicas*/
+
+.problemas article {
+    background-position: center;
+    background-size: cover;
+}
+
+.problemas article:nth-child(1) {
+    background-image: url(images/imagen3.jpg);
+}
+
+.problemas article:nth-child(2) {
+    background-image: url(images/imagen4.jpg);
+}
+
+.problemas article:nth-child(3) {
+    background-image: url(images/imagen5.jpg);
+}
+
+.problem-titulo {
+    color: #FFC329;
+    font-size: 4rem;
+    padding-left: 6%;
+    line-height: 4rem;
+}
+
+.problem-texto {
+    color: white;
+    padding-left: 6%;
+    padding-right: 60%;
+    padding-top: 1rem;
+}
+
+/*clases full page js*/
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 40%;
+    border-width: 20px 20px 20px 0;
+}
+
+.fp-controlArrow.fp-next {
+    right: 40%;
+    border-width: 20px 0px 20px 20px;
+}
+
+
+/*personajes*/
+
+.pers-titulo {
+    text-align: left;
+    padding-top: 3rem;
+    padding-left: 6%;
+    font-size: 3rem;
+    padding-bottom: 0;
+
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 5rem;
+    perspective: 900px;
+    overflow: hidden;
+}
+
+.card {
+    width: 17rem;
+    height: 30rem;
+    position: relative;
+    display: flex;
+    text-align: center;
+    transform-style: preserve-3d;
+    color: white;
+    font-size: 0.8rem;
+}
+
+
+.card:hover .sideA{
+    transform: rotateY(180deg);
+}
+
+.card:hover .sideB{
+    transform: rotateY(0deg);
+}
+
+
+[class*=side]{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: transform .5s;
+}
+
+
+.sideA {
+    background-color: #363141;
+}
+
+.sideB {
+    background-color: #797979;
+    transform: rotateY(-180deg);
+}
+
+
+
+.sideA-card1 {
+    background-image: url(/images/personaje1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sideA-card2 {
+    background-image: url(/images/personaje2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sideA-card3 {
+    background-image: url(/images/personaje3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.espacio-pers{
+height: 30%;
+}
+
+
+.bg-video{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+}
+
+.propuesta{
+    display: flex;
+    text-align: center;
+}
+
+
+
+/*actores*/
+
+.actores {
+    background-image: url(/images/ACTORES.jpg);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+}
+
+.bg-audio{
+    padding-top: 1rem;
+}
+
+/*encuesta*/
+
+
+.encuesta h1{
+    
+    text-align: left;
+    padding-left: 6%;
+    font-size: 3rem;
+    padding-bottom: ;
+}
+
+.encu1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.encu2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mapeo{
+    background-image: url(/images/Mapeo.jpg);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.mapeo h1{
+    text-align: left;
+    padding-left: 4%;
+    font-size: 3rem;
+    line-height: 3.3rem;
+}
+
+.midas{
+    background-image: url(/images/MIDAS.jpg);
+    background-position: center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.midas h1{
+    text-align: left;
+    padding-left: 4%;
+    font-size: 3rem;
+    line-height: 3.3rem;
+}

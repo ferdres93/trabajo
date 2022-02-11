@@ -1,0 +1,17 @@
+const secciones = new fullpage('#fullpage', {
+    autoScrolling: true,
+	fitToSection: false,
+	fitToSectionDelay: 200,
+	easing: 'easeInOutCubic',
+	scrollingSpeed: 500,
+	css3: true,
+	easingcss3: 'ease-out',
+	loopBottom: false,
+    navigation: true,
+	menu: '#menu',
+	anchors: ['inicio', 'situación', 'actores', 'encuesta','mapeo','midas', 'problemáticas', 'personajes','propuesta'],
+	navigationTooltips: ['Inicio', 'Situación','Actores','Encuesta','Mapeo', 'Midas','Problemáticas', 'Personajes','Propuesta'],
+	showActiveTooltip: false,
+    sectionsColor : ['#000', '#c2c2c2', '#ffffff', '#ffffff','#ffffff', '#ffffff', '#797979', '#c2c2c2'],
+	verticalCentered: true,
+});
